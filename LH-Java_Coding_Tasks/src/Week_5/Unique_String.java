@@ -1,0 +1,24 @@
+package Week_5;
+
+public class Unique_String {
+    public static void main(String[] args) {
+
+        String str = "AAABBBCCCDEF";
+        String uniqueChar = " ";
+
+        for (int i = 0; i < str.length() ; i++) {
+            char each = str.charAt(i);
+
+            if(str.indexOf(each)==str.lastIndexOf(each)){
+                uniqueChar += each;
+            }
+
+        }
+        System.out.println(uniqueChar);
+    }
+}
+
+/*TASK
+String -- Find the unique
+Write a return method that can find the unique characters from the String Ex: unique("AAABBBCCCDEF") ==> "DEF";
+ */
